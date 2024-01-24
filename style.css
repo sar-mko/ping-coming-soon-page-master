@@ -12,51 +12,78 @@
     font-optical-sizing: auto;
     font-style: normal;
    
-  }
-
+}
+.bold-style{
+    font-weight: 600;
+    color: black;
+}
 main{
     flex-direction: column;
     align-items: center;
     padding: 10px;
-}
 
+    max-height: 100vh;
+}
 .logo-img{
-    width: 49px;
+    width: 70px;
     padding: 21px 0 16px 0;
 }
 .dash-img{
-    width: 60%;
-    padding: 10px;
+    width: 47%;
+    padding: 10px 0 25px 0;
 }
 h1{
     padding: 8px 0;
+    color:hsl(0, 0%, 60%);
+    font-size: 38px;
 }
 h2{
-    font-size: 20px;
+    font-size: 15px;
+    color:hsl(0, 0%, 59%);
+
 }
 /*input styles*/
+.input-cont{
+    padding: 25px 5px;
+    width: 51%;
+}
+input{
+    padding: 11px 40px;
+    border-radius: 20px;
+    border: 1px solid hsl(0, 0%, 92%);
+    width: 64%;
+}
+input::placeholder{
+    color: hsl(0, 0%, 92%);
+}
 button{
-    padding: 8px 40px;
+    padding: 11px 40px;
     margin-left: 5px;
     border-radius: 20px;
     font-size: 12px;
+    font-weight: 500;
     background-color: hsl(223, 87%, 63%);
     color: white;
     border: 0;
     box-shadow: 5px;
+    width: 30%;
 }
-input{
-    padding: 8px 40px;
-    border-radius: 20px;
-    border: 1px solid  hsl(0, 0%, 59%);
+.hide{
+    display: none;
 }
-.input-cont{
-    padding: 10px 5px;
+.alert-msg{
+    color: hsl(354, 100%, 66%);
+    font-size: 8px;
+    font-style: italic;
+}
+button:hover{
+    background-color: hsl(223, 87%, 83%);
+    cursor: pointer;
 }
 /*icons styles*/
 .icons-cont{
     width: 50%;
-    padding: 5px;
+    padding: 30px 0 30px 0;
 }
 .icons{
     flex-direction: row;
@@ -71,5 +98,8 @@ input{
     border-radius: 100%;
     border: 1px solid hsl(223, 100%, 88%);
     padding: 6px 9px;
-
+    font-size: 20px;
+}
+.copyright {
+    font-size: 10px;
 }
