@@ -29,7 +29,7 @@ main{
     padding: 21px 0 16px 0;
 }
 .dash-img{
-    width: 47%;
+    width: 600px;
     padding: 10px 0 25px 0;
 }
 h1{
@@ -45,7 +45,7 @@ h2{
 /*input styles*/
 .input-cont{
     padding: 25px 5px;
-    width: 51%;
+    width: 600px;
 }
 input{
     padding: 11px 40px;
@@ -73,8 +73,9 @@ button{
 }
 .alert-msg{
     color: hsl(354, 100%, 66%);
-    font-size: 8px;
+    font-size: 9px;
     font-style: italic;
+    padding: 7px 0 0 17px;
 }
 button:hover{
     background-color: hsl(223, 87%, 83%);
@@ -102,4 +103,102 @@ button:hover{
 }
 .copyright {
     font-size: 10px;
+    padding-top: 5px;
+}
+
+/*media queries*/
+
+/* @media screen and (max-width: 900px){
+    .input-cont{
+        width: 59%;
+    }
+}
+
+@media screen and (max-width: 780px){
+    .input-cont{
+        width: 63%;
+    }
+} */
+@media screen and (max-width: 608px){
+main{
+    padding: 10px;
+}
+    .logo-img{
+        width: 60px;
+    }
+    h1{
+        font-size: 32px;
+    }
+    h2{
+        font-size: 13px;
+    }
+    .input-cont{
+        width: 451px;
+    }
+    /* input{
+        width: 100%;
+    }
+    button{
+        width: 100%;
+        margin: 12px 0 0 0;
+    
+    } */
+    .dash-img{
+        width: 90%;
+        padding-top: 37px;
+    }
+}
+
+ @media screen and (max-width: 450px){
+    main{
+        padding: 25px;
+    }
+    .logo-img{
+        width: 46px;
+    }
+    h1{
+        font-size: 20px;
+    }
+    h2{
+        font-size: 11px;
+    }
+    .input-cont{
+        width: 85%;
+        /*80 looks good here too*/
+    }
+    input{
+        width: 100%;
+    }
+    button{
+        width: 100%;
+        margin: 12px 0 0 0;
+    
+    }
+    .dash-img{
+        width: 100%;
+        padding-top: 37px;
+    }
+    .icons-cont{
+        padding: 102px 0 0 0;
+    }
+    .fa{
+        font-size: 12px;
+    }
+    alert-msg{
+        padding: 7px 0 0 20px;
+    }
+}
+@media screen and (max-width: 260px){
+    main{
+        padding: 5px;
+    }
+    h1{
+        font-size: 15px;
+    }
+    .dash-img{
+        display: none;
+    }
+    .icons-cont{
+        padding: 23px;
+    }
 }
