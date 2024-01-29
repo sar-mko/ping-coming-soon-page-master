@@ -11,17 +11,22 @@
     font-family: "Libre Franklin", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-   
 }
 .bold-style{
     font-weight: 600;
     color: black;
 }
+.attribution{
+    font-size: 11px;
+     text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
 main{
     flex-direction: column;
     align-items: center;
     padding: 10px;
-
     max-height: 100vh;
 }
 .logo-img{
@@ -40,7 +45,6 @@ h1{
 h2{
     font-size: 15px;
     color:hsl(0, 0%, 59%);
-
 }
 /*input styles*/
 .input-cont{
@@ -108,17 +112,6 @@ button:hover{
 
 /*media queries*/
 
-/* @media screen and (max-width: 900px){
-    .input-cont{
-        width: 59%;
-    }
-}
-
-@media screen and (max-width: 780px){
-    .input-cont{
-        width: 63%;
-    }
-} */
 @media screen and (max-width: 608px){
 main{
     padding: 10px;
@@ -135,14 +128,6 @@ main{
     .input-cont{
         width: 451px;
     }
-    /* input{
-        width: 100%;
-    }
-    button{
-        width: 100%;
-        margin: 12px 0 0 0;
-    
-    } */
     .dash-img{
         width: 90%;
         padding-top: 37px;
@@ -164,7 +149,6 @@ main{
     }
     .input-cont{
         width: 85%;
-        /*80 looks good here too*/
     }
     input{
         width: 100%;
@@ -172,7 +156,6 @@ main{
     button{
         width: 100%;
         margin: 12px 0 0 0;
-    
     }
     .dash-img{
         width: 100%;
@@ -188,6 +171,7 @@ main{
         padding: 7px 0 0 20px;
     }
 }
+
 @media screen and (max-width: 260px){
     main{
         padding: 5px;
